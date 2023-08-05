@@ -11,9 +11,15 @@ mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Database connected'))
   .catch(e => console.error(e));
 
+const allowedOrigins = [
+  'https://64ce014fdad64a1cf92baace--prismatic-malasada-9818c4.netlify.app',
+  'http://localhost:5173'
+];
+  
+
 const io = require("socket.io")(SOCKETIO_PORT, {
   cors: {
-    origin: BASE_URL,
+    origin: allowedOrigins,
     methods: ["GET", "POST"],
   },
 });
