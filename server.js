@@ -14,7 +14,7 @@ mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(e => console.error(e));
 
 const allowedOrigins = [
-  'https://64ce05628a3f381ad5193599--prismatic-malasada-9818c4.netlify.app/p',
+  'https://64ce05628a3f381ad5193599--prismatic-malasada-9818c4.netlify.app',
   'http://localhost:5173'
 ];
   
