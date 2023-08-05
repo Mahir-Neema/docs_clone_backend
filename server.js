@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const mongoUri = process.env.MONGODB_URI
 const BASE_URL = process.env.BASE_URL
-const SOCKETIO_PORT = process.env.SOCKETIO_PORT
+const SOCKETIO_PORT = process.env.SOCKETIO_PORT || 3001
 
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Database connected'))
