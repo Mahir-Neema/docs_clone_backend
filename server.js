@@ -7,6 +7,8 @@ const mongoUri = process.env.MONGODB_URI
 const BASE_URL = process.env.BASE_URL
 const SOCKETIO_PORT = process.env.SOCKETIO_PORT || 3001
 
+console.log(SOCKETIO_PORT);
+
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Database connected'))
   .catch(e => console.error(e));
