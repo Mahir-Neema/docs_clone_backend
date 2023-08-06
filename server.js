@@ -10,9 +10,10 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Handle all client-side routes
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build/index.html'));
 });
+
 
 const mongoUri = process.env.MONGODB_URI;
 mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
