@@ -58,6 +58,9 @@ io.on("connection", (socket) => {
   });
 });
 
+const defaultValue = "";
+
+
 async function findOrCreateDocument(id){
     if(id == null) return;
 
