@@ -35,7 +35,7 @@ const allowedOrigins = [
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: allowedOrigins,
+    origin: '*',
     methods: ["GET", "POST"],
   },
 });
