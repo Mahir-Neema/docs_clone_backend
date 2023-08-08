@@ -28,7 +28,7 @@ const server = app.listen(port, () => {
 
 
 const allowedOrigins = [
-  'https://64ce05628a3f381ad5193599--prismatic-malasada-9818c4.netlify.app',
+  'https://64d1dc015ddfe231370d9eae--prismatic-malasada-9818c4.netlify.app/',
   'http://localhost:5173'
 ];
 
